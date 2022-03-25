@@ -1,0 +1,27 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "setup": "concurrently \"npm install:frontend\" \"npm install\"",
+    "start": "concurrently \"npm run dev\" \"npm run start --prefix frontend\""
+  },
+  "author": "Sumedh Bhat",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "chart.js": "^3.7.1",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "http": "^0.0.1-security",
+    "mongoose": "^6.2.7",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "react-router-dom": "^6.2.2"
+  }
+}
